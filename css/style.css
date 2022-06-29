@@ -156,9 +156,6 @@ body {
 	margin-top: 95px;
 }
 
-.works__card {
-}
-
 .card {
 	display: flex;
 	gap: 32px;
@@ -244,7 +241,11 @@ body {
 }
 
 .card__button:hover {
-	background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+	background: linear-gradient(
+		99.05deg,
+		#e64c2e 0.07%,
+		rgb(191, 63, 131) 106.32%
+	);
 }
 
 .card__button:hover::before {
@@ -306,10 +307,6 @@ body {
 	grid-row: 3/5;
 }
 
-.footer__social {
-	color: rgba(227, 228, 230, 0.55);
-}
-
 .footer {
 	padding: 80px 0 40px;
 }
@@ -348,7 +345,12 @@ body {
 	cursor: pointer;
 }
 
-.footer__social:hover {
+.footer__social i {
+	color: rgba(227, 228, 230, 0.55);
+	transition: all 0.7s ease;
+}
+
+.footer__social:hover i {
 	background: linear-gradient(
 		99.05deg,
 		var(--color-text) 0.07%,
@@ -357,20 +359,9 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	transform: scale(1.2);
 }
-.footer__social {
-}
-.footer__mail {
-}
-.fa {
-}
-.fa-envelope {
-}
-.footer__linkedin {
-}
-.fa-linkedin {
-}
-.footer__vk {
-}
-.fa-vk {
+
+.footer__social a {
+	text-decoration: none;
 }
